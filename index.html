@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Safety Alert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+        <h1>🚗 Speed Safety Alert app owner mayank</h1>
+        <p class="subtitle">Your Safety, Our Priority</p>
+
+        <div class="speed-card">
+            <p>Current Speed</p>
+            <div class="speed">
+                <span id="speed">0</span>
+                <small>km/h</small>
+            </div>
+            <p id="status" class="status">Ready to Start</p>
+        </div>
+
+        <div class="limit-card">
+            <span>Speed Limit</span>
+            <strong>60 km/h</strong>
+        </div>
+
+        <button id="startBtn" onclick="startTracking()">
+            📍 Start GPS Tracking
+        </button>
+
+        <button id="stopBtn" onclick="stopTracking()" disabled>
+            ⏹ Stop Tracking
+        </button>
+
+        <p id="message">Press Start GPS Tracking to begin.</p>
+
+        <div class="notice">
+            <strong>Safety Notice</strong>
+            <p>Please do not use your phone while driving.
+            Ask a passenger to operate this app.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
